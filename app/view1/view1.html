@@ -1,0 +1,27 @@
+<p>This is the partial for view 1.</p>
+<div>
+<form novalidate name="detailsForm">
+    <div>
+    Name: <input ng-model="orderDetails.name"/>
+    </div>
+    <div>
+    Email: <input ng-model="orderDetails.email"/>
+    </div>
+    <div>
+    Number of pages: <input ng-model="orderDetails.numberOfPages"/>
+    </div>
+    product:<br/>
+    <input data-ng-model="orderDetails.productType" type="radio" value="PSD to HTML"/>PSD to HTML<br/>
+    <input data-ng-model="orderDetails.productType" type="radio" value="PSD to Responsive"/>PSD to Responsive<br/>
+    <input data-ng-model="orderDetails.productType" type="radio" value="PSD to WordPress"/>PSD to WordPress<br/>
+    <input data-ng-model="orderDetails.productType" type="radio" value="PSD to EMAIL"/>PSD to EMAIL<br/>
+</form>
+</div>
+<br/>
+<div>
+    <div>Order Summary</div>
+    <div>Name: <span  ng-bind="orderDetails.name"></span></div>
+    <div>Email:<span data-ng-bind="orderDetails.email"></span></div>
+    <div> Number of pages: <span data-ng-bind="orderDetails.numberOfPages"></span></div>
+    <div> Orderd Product:<span data-ng-bind="orderDetails.productType"></span></div>
+</div>
